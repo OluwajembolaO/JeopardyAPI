@@ -13,12 +13,12 @@ openai_client = AzureOpenAI(
     api_version="2024-05-01-preview",
 )
 
-def jeapordyOpenAI(prompt):
+def jeapordyOpenAI(contentType,userPrompt):
     response = openai_client.chat.completions.create(
                 model=MODEL_NAME,
                 messages=[
-                    {"role": "system", "content": f"You are a helpful assistant."},
-                    {"role": "user", "content": prompt}
+                    {"role": "system", "content": f"{contentType}"} ,
+                    {"role": "user", "content": userPrompt}
                 ],
                 max_tokens=4000
             )
