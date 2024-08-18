@@ -31,4 +31,7 @@ def checkSubcategoryCount(subcategoryCount):
 
 # check to see if the subcategory count is greater or equal to the subcatogeries given
 def checkSubcategoryCountGreater(subcategoryCount, subcatogeries):
-    pass
+    if subcategoryCount >= subcatogeries:
+        raise ValueError("The number of subcategories must be less than or equal to the number of subcategories given")
+    else:
+        pass
