@@ -46,7 +46,7 @@ def checkDifficulity(difficulity):
 
 # check to see if's the correct subcategory count
 def checkSubcategoryCount(subcategoryCount):
-    return subcategoryCount < 8
+    return 0 < subcategoryCount < 8
 
 # check to see if the subcategory count is greater or equal to the subcatogeries given
 def checkSubcategoryCountGreater(subcategoryCount, subcatogeries):
